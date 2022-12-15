@@ -78,6 +78,8 @@ function baddie_update(baddie)
       end
     else
       baddie.state = "wait"
+      baddie.dx = 0
+      baddie.dy = 0
       baddie.ttl = ceil(rnd(15) + 15)
     end
   end
